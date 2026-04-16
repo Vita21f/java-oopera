@@ -15,7 +15,6 @@ class Actor extends Person {
         Actor otherActor = (Actor) obj;
         return Objects.equals(name, otherActor.name) &&
                 Objects.equals(surname, otherActor.surname) &&
-                (gender == otherActor.gender)&&
                 (height == otherActor.height);
     }
 

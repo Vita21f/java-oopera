@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Objects;
 
 public class Theatre {
     public static void main(String[] args){
@@ -27,16 +26,17 @@ public class Theatre {
         opera.addActor(actor2);
         ballet.addActor(actor3);
         classisShow.addActor(actor3); // Екатерина может участвовать в двух спектаклях
+        classisShow.addActor(actor3); //проверка добавления: теперь при выводе предупреждения дубликат не добавляется
 
         classisShow.printListOfActors();
         opera.printListOfActors();
         ballet.printListOfActors();
 
-        classisShow.replaceActor("Петров", actor2); // меняем Анатолия Петрова на Александра Иванова
+        classisShow.replaceActor("Петров", actor2); // меняем Петрова на Иванова
 
         classisShow.printListOfActors();
 
-        classisShow.replaceActor("Неизвестный", actor1);
+        classisShow.replaceActor("Неизвестный", actor2);
 
         opera.printLibretto();
         ballet.printLibretto();
