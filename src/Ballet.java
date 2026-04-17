@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-class Ballet extends MusicShow {
+class Ballet extends MusicalShow {
 protected  String choreographer;
 
 
